@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+image {
+  border: 0;
+}
+
+.main_header {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+
+  background-color: #1d4088;
+  color: white;
+}
+
+.main_gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #32394a;
+}
+
+.main_gnb > ul:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.main_gnb > ul:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.main_gnb a {
+  display: block;
+  padding: 10px 20px;
+  border-left: 1px solid #5f6673;
+  border-right: 1px solid #242a37;
+  color: white;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+}
+
+.wrap > .main_lnb {
+  flex-shrink: 0;
+  width: 200px;
+  background-color: #71b1d1;
+}
+
+.main_lnb > ul > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+
+  border-top: 1px solid #96d6f6;
+  border-bottom: 1px solid #6298b2;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  border-left: 1px solid black;
+}
+
+article {
+  padding: 10px;
+}
+
+.main_footer {
+  padding: 10px;
+  border-top: 3px solid black;
+  text-align: center;
+}
