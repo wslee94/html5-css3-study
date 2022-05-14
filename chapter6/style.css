@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+image {
+  border: 0;
+}
+
+.main_header {
+  height: 45px;
+  background-image: url("./assets/header_background.png");
+
+  position: relative;
+  text-align: center;
+  line-height: 45px;
+}
+
+.main_header > h1 {
+  color: white;
+}
+
+.main_header > a,
+.main_header > label {
+  display: block;
+  height: 32px;
+  position: absolute;
+}
+
+.main_header > a {
+  width: 62px;
+  left: 5px;
+  top: 7px;
+
+  background-image: url("./assets/sprites.png");
+  background-position: 0px 0px;
+}
+
+.main_header > label {
+  width: 32px;
+  right: 5px;
+  top: 7px;
+
+  background-image: url("./assets/sprites.png");
+  background-position: -62px 0px;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .toggle_gnb_wrap {
+  display: block;
+}
+
+.toggle_gnb_wrap {
+  display: none;
+  background-color: #363636;
+  padding: 15px;
+}
+
+.toggle_gnb {
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.toggle_gnb > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toggle_gnb > ul > li {
+  width: 80px;
+}
+
+.top_gnb > ul {
+  display: flex;
+  background-color: #b42111;
+}
+
+.top_gnb > ul > li {
+  width: 100%;
+}
+
+.top_gnb > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+
+.bottom_gnb {
+  border-bottom: 1px solid black;
+}
+
+.bottom_gnb > ul {
+  display: flex;
+}
+
+.bottom_gnb > ul > li {
+  position: relative;
+  width: 100%;
+}
+
+.bottom_gnb > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.bottom_gnb > ul > li > a::before {
+  display: block;
+
+  position: absolute;
+  top: 9px;
+  left: -1px;
+
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid black;
+  content: "";
+}
+
+.main_content > .section_hedaer {
+  padding: 20px;
+}
+
+.main_content > .section_article {
+  padding: 10px;
+}
+
+.main_footer {
+  padding: 10px;
+  border-top: 3px solid black;
+  text-align: center;
+}
