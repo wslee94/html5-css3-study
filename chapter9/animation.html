@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Basic</title>
+  <style>
+    * { margin: 0; padding:0 }
+    #box {
+      position: absolute;
+      top: 100px;
+      left: 500px;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      text-align: center;
+      background:  linear-gradient(#e66465, #9198e5);;
+
+      animation-name: rint;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; /* or integer */
+      animation-timing-function: linear;
+      animation-direction: alternate; /* altertate: from -> to -> from 왕복,  normal: from -> to 단방 */
+    }
+
+    #box:hover {
+      animation-play-state: paused;
+    }
+
+    #box > h1 {
+      line-height: 200px;
+    }
+
+    @keyframes rint {
+      from {
+        left:500px;
+        transform: rotate(0deg);
+      }
+
+      50% {
+        left: 750px;
+      }
+
+      to {
+        left:1000px;
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="box">
+    <h1>Rotation</h1>
+  </div>
+</body>
+</html>
